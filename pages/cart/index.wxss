@@ -1,3 +1,6 @@
+page {
+  padding-bottom: 90rpx;
+}
 .revice_address_row .address_btn {
   padding: 20rpx;
 }
@@ -24,7 +27,7 @@
 }
 .cart_content .cart_main .cart_item {
   display: flex;
-  padding: 20rpx;
+  padding: 10rpx;
   border-bottom: 1rpx solid #ccc;
 }
 .cart_content .cart_main .cart_item .cart_chk_wrap {
@@ -46,7 +49,7 @@
   flex: 4;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .cart_content .cart_main .cart_item .cart_info_wrap .goods_name {
   display: -webkit-box;
@@ -63,10 +66,10 @@
   color: var(--themeColor);
   font-size: 34rpx;
 }
-.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num-tool {
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool {
   display: flex;
 }
-.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num-tool .num_edit {
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool .num_edit {
   width: 55rpx;
   height: 55rpx;
   display: flex;
@@ -74,13 +77,12 @@
   align-items: center;
   border: 1rpx solid #ccc;
 }
-.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num-tool .goods_num {
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_num_tool .goods_num {
   width: 55rpx;
   height: 55rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1rpx solid #ccc;
 }
 .footer_tool {
   position: fixed;
@@ -90,7 +92,31 @@
   height: 90rpx;
   background-color: #fff;
   display: flex;
+  border-top: 1rpx solid #ccc;
 }
-.footer_tool .all_chk-wrap {
-  flex: 1;
+.footer_tool .all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool .total_price_wrap {
+  flex: 5;
+  padding-right: 15rpx;
+  text-align: right;
+}
+.footer_tool .total_price_wrap .total_price .total_price_text {
+  color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.footer_tool .order_pay_wrap {
+  flex: 3;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
