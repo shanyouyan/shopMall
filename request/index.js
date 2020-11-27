@@ -5,7 +5,7 @@ export const request = (params) => {
     //显示加载中的图标
     wx.showLoading({
         title: "加载中",
-        mask: true,
+        mask: true,//背景遮罩
     });
 
     //定义公共的接口访问路径
