@@ -86,17 +86,19 @@ Page({
       await requestPayment(pay);
       // 7 查询后台 订单状态
       const res = await request({ url: "/my/orders/chkOrder", method: "POST", data: { order_number } });
+
+      console.log(res);
       await showToast({ title: "支付成功" });
       // 8 手动删除缓存中 已经支付了的商品
-      let newCart=wx.getStorageSync("cart");
-      newCart=newCart.filter(v=>!v.checked);
+      let newCart = wx.getStorageSync("cart");
+      newCart = newCart.filter(v => !v.checked);
       wx.setStorageSync("cart", newCart);
-        
+
       // 8 支付成功了 跳转到订单页面
       wx.navigateTo({
         url: '/pages/order/index'
       });
-        
+
     } catch (error) {
       await showToast({ title: "支付失败" })
       console.log(error);
