@@ -54,8 +54,6 @@ Page({
       return;
     }
 
-
-
     // 1 获取当前的小程序的页面栈-数组 长度最大是10页面 
     let pages = getCurrentPages();
     // 2 数组中 索引最大的页面就是当前页面
