@@ -28,7 +28,7 @@
       </navigator>
       <navigator>
         <view class="his_num">0</view>
-        <view class="his_name">我的足迹</view>
+        <view class="his_name">浏览历史</view>
       </navigator>
     </view>
     <!-- 我的订单 -->
