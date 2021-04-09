@@ -1,0 +1,3 @@
+<view>
+  <button bindtap="getUserLocation">获取位置</button>
+</view>
